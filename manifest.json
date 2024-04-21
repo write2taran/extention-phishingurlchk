@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "phising url detector",
+  "version": "1.0",
+  "description": "Checks for phising urls and redirects if necessary",
+  "permissions": [
+    "webRequest"],
+  "host_permissions":[
+    "http://*/*", 
+    "https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  } 
+}
